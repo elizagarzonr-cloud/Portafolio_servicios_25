@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristina Garzón | Safety Intelligence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="glass-nav">
+        <div class="logo">CG.<span>DATA</span></div>
+        <div class="nav-items">
+            <a href="#metodo">El Método</a>
+            <a href="#calculadora">Diagnóstico</a>
+            <a href="#contacto" class="cta-button">Agendar Auditoría</a>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="tech-badge"><i class="fa-solid fa-code"></i> Python & SST Integrated</div>
+            <h1>NO GESTIONO PAPELES.<br><span class="highlight">PREDIGO RIESGOS.</span></h1>
+            <p class="hero-sub">La primera consultoría en Colombia que fusiona <strong>Normativa Legal</strong> con <strong>Ciencia de Datos</strong> para blindar su empresa financiera y operativamente.</p>
+            
+            <div class="stats-row">
+                <div class="stat">
+                    <span class="number">15%</span>
+                    <span class="label">Reducción Incidentes</span>
+                </div>
+                <div class="stat">
+                    <span class="number">95%</span>
+                    <span class="label">Efectividad ARL</span>
+                </div>
+                <div class="stat">
+                    <span class="number">100%</span>
+                    <span class="label">Control de Datos</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="calculadora" class="calculator-section">
+        <div class="container">
+            <div class="calc-intro">
+                <h2>¿Cuánto le cuesta a su empresa <em>no</em> tenerme?</h2>
+                <p>El incumplimiento del SG-SST genera multas masivas. Use mi calculadora basada en la normativa vigente (Decreto 1072 / Res 0312) para estimar su riesgo financiero actual.</p>
+            </div>
+            
+            <div class="calc-box">
+                <div class="input-group">
+                    <label>Número de Empleados</label>
+                    <input type="number" id="employees" placeholder="Ej: 50">
+                </div>
+                <div class="input-group">
+                    <label>Nivel de Riesgo (1-5)</label>
+                    <select id="riskLevel">
+                        <option value="1">I - Bajo</option>
+                        <option value="2">II - Medio</option>
+                        <option value="3">III - Alto</option>
+                        <option value="4">IV - Muy Alto</option>
+                        <option value="5">V - Máximo</option>
+                    </select>
+                </div>
+                <button onclick="calculateRisk()" class="calc-btn">CALCULAR RIESGO</button>
+                
+                <div id="result" class="result-hidden">
+                    <p>Multa Potencial Estimada:</p>
+                    <h3 id="fineAmount">$0 COP</h3>
+                    <small>*Estimación basada en sanciones máximas legales. No permita que esto pase.</small>
+                    <a href="#contacto" class="emergency-btn">BLINDAR MI EMPRESA AHORA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="metodo" class="method-section">
+        <h2>Mi Metodología: <span class="gradient-text">Data-Driven Safety</span></h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="icon-circle"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <div class="content">
+                    <h3>1. Diagnóstico Profundo</h3>
+                    <p>No uso checklists genéricos. Analizo sus DATA históricos (incidentes, ausentismo) para descubrir las causas raíz reales de sus riesgos.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="icon-circle"><i class="fa-brands fa-python"></i></div>
+                <div class="content">
+                    <h3>2. Automatización Preventiva</h3>
+                    <p>Elimino la ceguera operativa. Cruzo automáticamente nómina y seguridad social para exponer inconsistencias peligrosas que su equipo no ve.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="icon-circle"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="content">
+                    <h3>3. Blindaje Corporativo</h3>
+                    <p>Entrega de tableros PowerBI en tiempo real para la gerencia. Usted toma decisiones estratégicas, yo aseguro el cumplimiento normativo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="servicios" class="services-section">
+        <div class="section-header">
+            <span class="subtitle">ECOSISTEMA 360°</span>
+            <h2>Servicios de <span class="gradient-text">Alto Impacto</span></h2>
+            <p>Fusiono la obligatoriedad normativa con la inteligencia de negocios. Elija la solución que su empresa necesita hoy.</p>
+        </div>
+
+        <div class="services-container">
+            
+            <div class="premium-card">
+                <div class="card-badge legal">Obligatorio por Ley</div>
+                <div class="card-icon">
+                    <i class="fa-solid fa-shield-virus"></i>
+                </div>
+                <h3>Sistema de Gestión con Propósito</h3>
+                <p class="card-desc">Un SG-SST que va más allá del papel para convertirse en herramienta de prevención de pérdidas.</p>
+                <ul class="service-list">
+                    <li><i class="fa-solid fa-check"></i> <strong>SST con Inteligencia:</strong> Nace digital y predictivo.</li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Priorización de Riesgos:</strong> Inversión inteligente.</li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Emergencias Reales:</strong> Planes ejecutables bajo presión.</li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Tranquilidad Auditiva:</strong> Siempre listo para ARL/MinTrabajo.</li>
+                </ul>
+            </div>
+
+            <div class="premium-card highlight-border">
+                <div class="card-badge tech">Alta Tecnología</div>
+                <div class="card-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3>SST Intelligence & Analytics</h3>
+                <p class="card-desc">De los datos a la acción. Visualice el estado de su seguridad en tiempo real y anticípese a los riesgos.</p>
+                <ul class="service-list">
+                    <li><i class="fa-solid fa-chart-pie"></i> <strong>Tableros PowerBI:</strong> Monitoreo del pulso de seguridad.</li>
+                    <li><i class="fa-brands fa-python"></i> <strong>Scripts Python:</strong> Integración de nómina y reportes.</li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Indicadores Predictivos:</strong> Alertas de impacto financiero.</li>
+                    <li><i class="fa-solid fa-brain"></i> <strong>Estrategia IA:</strong> Decisiones respaldadas por Inteligencia Artificial.</li>
+                </ul>
+            </div>
+
+            <div class="premium-card">
+                <div class="card-badge efficiency">Eficiencia Operativa</div>
+                <div class="card-icon">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+                <h3>Inteligencia Operativa & Compensaciones</h3>
+                <p class="card-desc">Tecnología y precisión para la gestión financiera de su equipo humano.</p>
+                <ul class="service-list">
+                    <li><i class="fa-solid fa-check"></i> <strong>Cumplimiento 360°:</strong> Defensa sólida ante auditorías.</li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Onboarding Digital:</strong> Contratación ágil sin papeleo.</li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Archivo Vivo Cloud:</strong> Documentos indexados y seguros.</li>
+                    <li><i class="fa-solid fa-magnifying-glass-dollar"></i> <strong>Radar Financiero:</strong> Cruce de datos para ahorro en nómina.</li>
+                </ul>
+            </div>
+
+            <div class="premium-card">
+                <div class="card-badge culture">Transformación</div>
+                <div class="card-icon">
+                    <i class="fa-solid fa-users-viewfinder"></i>
+                </div>
+                <h3>Transformación Cultural en Seguridad</h3>
+                <p class="card-desc">Creamos equipos que se cuidan a sí mismos. La mejor protección nace desde adentro.</p>
+                <ul class="service-list">
+                    <li><i class="fa-solid fa-check"></i> <strong>Entrenamientos Memorables:</strong> Gamificación 100% práctica.</li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Capital Humano:</strong> Prevención de burnout y fatiga.</li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Cuidado Colectivo:</strong> Influencia positiva entre pares.</li>
+                    <li><i class="fa-solid fa-check"></i> <strong>Medición Real:</strong> Métricas de cambio de comportamiento.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="quote-banner">
+        <p>"No le ofrecemos otro reporte más. Le entregamos el <strong>sistema nervioso digital</strong> de su seguridad, capaz de ver lo invisible y anticiparse a lo inevitable."</p>
+    </section>
+
+    <footer id="contacto">
+        <div class="footer-container">
+            <div class="cta-final">
+                <h2>Deje de jugar a la ruleta rusa con su seguridad.</h2><br>
+                <p>Soy Cristina Garzón. Administradora, Especialista SST y Analista de Datos.</p>
+                <div class="contact-methods">
+                    <a href="https://wa.me/573238134650" class="whatsapp-btn"><i class="fa-brands fa-whatsapp"></i> Contacto Directo</a>
+                    <a href="mailto:elizagarzonr@gmail.com" class="email-btn">Enviar Caso por Correo</a>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            © 2025 Cristina Garzón | Ingeniería de Datos aplicada a SST
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
